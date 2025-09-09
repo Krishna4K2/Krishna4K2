@@ -2,7 +2,7 @@
   
 # Hello!👋, I'm Krishna | Automate⚙️, Scale☁️ & Secure🛡️
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=36BCF7FF&center=true&width=600&lines=DevOps+Engineer+%7C+Cloud+Architect;DevSecOps+Specialist+%7C+SRE;Platform+Engineer+%7C+Infrastructure+Expert;Building+Scalable+Cloud+Solutions;🚀+Always+Learning+%7C+Always+Growing+🚀)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=36BCF7FF&center=true&width=600&lines=DevOps+Engineer+%7C+Cloud+Architect;DevSecOps+Specialist+%7C+SRE;Platform+Engineer+%7C+Infrastructure+Expert;Building+Scalable+Cloud+Solutions;🚀+Always+Learning+%7C+Always+Growing+🚀)](https://git.io/typing-svg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Krishna4K2&label=Profile%20views&color=0e75b6&style=flat)
 [![GitHub followers](https://img.shields.io/github/followers/Krishna4K2?label=Followers&style=social)](https://github.com/Krishna4K2?tab=followers)
@@ -24,22 +24,13 @@
 
 </details>
 
-## 🛠️ Technology Toolbox
-
-<details>
-<summary>☁️ <b>Cloud Platforms & Services</b></summary>
-<br>
+### ☁️ **Cloud Platforms**
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white)
 
-</details>
-
-<details>
-<summary>🔧 <b>DevOps & Infrastructure Tools</b></summary>
-<br>
+### 🔧 **DevOps & Infrastructure**
 
 **Container Technologies:**
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -56,11 +47,7 @@
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![GitLab CI](https://img.shields.io/badge/gitlab%20ci-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
 
-</details>
-
-<details>
-<summary>🔐 <b>Security & Monitoring</b></summary>
-<br>
+### 🔐 **Security & Monitoring**
 
 **Monitoring & Observability:**
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=Prometheus&logoColor=white)
@@ -72,11 +59,7 @@
 ![Falco](https://img.shields.io/badge/falco-%23005066.svg?style=for-the-badge&logo=falco&logoColor=white)
 ![Trivy](https://img.shields.io/badge/trivy-00979D.svg?style=for-the-badge&logo=trivy&logoColor=white)
 
-</details>
-
-<details>
-<summary>💻 <b>Programming & Scripting</b></summary>
-<br>
+### 💻 **Programming & Scripting**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
@@ -84,20 +67,13 @@
 ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white)
 ![YAML](https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515)
 
-</details>
-
-<details>
-<summary>🗄️ <b>Databases & Message Queues</b></summary>
-<br>
+### 🗄️ **Databases & Message Queues**
 
 ![PostgreSQL](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch)
-
-</details>
-
 
 ## 📊 GitHub Analytics
 
@@ -107,20 +83,6 @@
 
 <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Krishna4K2&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krishna4K2&layout=compact&langs_count=8&theme=tokyonight"/>
-
-</div>
-
-## 🤝 Let's Connect & Collaborate!
-
-I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
-
-<div align="center">
-
-### 📫 How to reach me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
 
 </div>
 
@@ -232,6 +194,21 @@ graph TD
     style CL2 fill:#f96,stroke:#333,stroke-width:2px
     style CL3 fill:#f96,stroke:#333,stroke-width:2px
 ```
+
+## 🤝 Let's Connect & Collaborate!
+
+I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
+
+<div align="center">
+
+### 📫 How to reach me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
+
+</div>
+
 <div align="center">
 
 ### 💭 *"The best way to learn is by doing. The best way to grow is by sharing."*
