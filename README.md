@@ -124,8 +124,6 @@ I'm always excited to connect with fellow engineers, share knowledge, and collab
 
 </div>
 
-<div align="center">
-
 ```mermaid
 graph TD
     subgraph " "
@@ -234,6 +232,7 @@ graph TD
     style CL2 fill:#f96,stroke:#333,stroke-width:2px
     style CL3 fill:#f96,stroke:#333,stroke-width:2px
 ```
+<div align="center">
 
 ### 💭 *"The best way to learn is by doing. The best way to grow is by sharing."*
 
