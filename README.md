@@ -50,6 +50,21 @@
 
 💡 **Philosophy**: *"Every challenge is an opportunity to learn something new. Infrastructure is not just about servers and networks—it's about enabling innovation and empowering teams to build the future."*
 
+<div align="center">
+
+### 🎖️ Achievements & Certifications
+
+[![AWS](https://img.shields.io/badge/AWS-Certified_Solutions_Architect-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/certification/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-CKA_Candidate-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://www.cncf.io/certification/cka/)
+[![Docker](https://img.shields.io/badge/Docker-Certified_Associate-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/certification/)
+
+### 🌟 Professional Status
+![Status](https://img.shields.io/badge/Status-Available_for_Collaboration-brightgreen?style=for-the-badge)
+![Open Source](https://img.shields.io/badge/Open_Source-Active_Contributor-orange?style=for-the-badge&logo=github)
+![Mentoring](https://img.shields.io/badge/Mentoring-Available-blue?style=for-the-badge&logo=linkedin)
+
+</div>
+
 ---
 
 ## 🛠️ Technology Toolbox
@@ -165,6 +180,19 @@
 
 </div>
 
+<div align="center">
+  
+### 📅 Weekly Development Breakdown
+
+<!--START_SECTION:waka-->
+```text
+Still calculating this week's coding time... 🤔
+Check back soon for detailed insights!
+```
+<!--END_SECTION:waka-->
+
+</div>
+
 ---
 
 ## ⚡ Quick Facts
@@ -209,14 +237,28 @@ I'm always excited to connect with fellow engineers, share knowledge, and collab
 ### 🎯 Let's talk about:
 `Cloud Architecture` • `DevSecOps` • `Kubernetes` • `Infrastructure as Code` • `CI/CD` • `Site Reliability Engineering`
 
+### 🤝 Open to:
+`💼 Job Opportunities` • `🚀 Consulting Projects` • `📚 Knowledge Sharing` • `👥 Mentoring` • `🤝 Collaboration` • `🎤 Speaking Engagements`
+
 </div>
 
+---
+
 <div align="center">
-  
+
+<img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" />
+
 ### 💭 *"The best way to learn is by doing. The best way to grow is by sharing."*
 
 ⭐ **Star some repos if you find them useful!** ⭐
 
+---
+
+<sub>**🔒 Security Note**: This profile uses only public APIs and doesn't expose any sensitive information</sub><br>
+<sub>**⚡ Performance**: All dynamic content is cached and optimized for fast loading</sub><br>
+<sub>**📊 Stats**: Last updated automatically • Real-time data from GitHub API</sub>
+
 ![Profile Views](https://komarev.com/ghpvc/?username=Krishna4K2&color=brightgreen&style=flat-square)
+![Last Updated](https://img.shields.io/badge/last%20updated-today-brightgreen?style=flat-square)
 
 </div>
