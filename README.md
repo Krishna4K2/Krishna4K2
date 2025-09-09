@@ -1,33 +1,20 @@
 <div align="center">
   
-# 🚀 Krishna K | Cloud Infrastructure & DevOps Engineer
+# Hello!👋, I'm Krishna | Automate⚙️, Scale☁️ & Secure🛡️
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7FF&center=true&width=600&lines=DevOps+Engineer+%7C+Cloud+Architect;DevSecOps+Specialist+%7C+SRE;Platform+Engineer+%7C+Infrastructure+Expert;Building+Scalable+Cloud+Solutions;Always+Learning+%7C+Always+Growing+🚀)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&pause=1000&color=36BCF7FF&center=true&width=600&lines=DevOps+Engineer+%7C+Cloud+Architect;DevSecOps+Specialist+%7C+SRE;Platform+Engineer+%7C+Infrastructure+Expert;Building+Scalable+Cloud+Solutions;🚀+Always+Learning+%7C+Always+Growing+🚀)](https://git.io/typing-svg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Krishna4K2&label=Profile%20views&color=0e75b6&style=flat)
 [![GitHub followers](https://img.shields.io/github/followers/Krishna4K2?label=Followers&style=social)](https://github.com/Krishna4K2?tab=followers)
 
 </div>
 
-## 📑 Table of Contents
-- [👨‍💻 About Me](#-about-me)
-- [🚀 Currently](#-currently)  
-- [🛠️ Technology Toolbox](#️-technology-toolbox)
-- [🏆 GitHub Trophies](#-github-trophies)
-- [📊 GitHub Analytics](#-github-analytics)
-- [⚡ Quick Facts](#-quick-facts)
-- [🤝 Let's Connect](#-lets-connect--collaborate)
+## About Me 👨‍💻
 
----
-
-## 👨‍💻 About Me
-
-🔥 **Passionate infrastructure engineer** on a continuous journey of learning and growth! I specialize in building resilient, scalable, and secure cloud infrastructure that empowers teams to deliver exceptional software experiences.
-
-## 🚀 Currently
+🔥 I wil be there where engineering, security, and operations meet and stay hands-on by doing projects and experiments (*Every challenge is an opportunity to learn something new* )
 
 <details>
-<summary>🎯 <b>Current Focus Areas</b></summary>
+<summary>🎯 <b>Focus Areas</b></summary>
 
 - **DevOps & CI/CD**: Streamlining development workflows and deployment pipelines
 - **DevSecOps**: Integrating security practices into every stage of the development lifecycle  
@@ -36,36 +23,6 @@
 - **Platform Engineering**: Building developer-centric platforms and tooling
 
 </details>
-
-<details>
-<summary>📚 <b>Currently Learning</b></summary>
-
-- 🐹 **Advanced Go Programming** - Building high-performance microservices
-- ☸️ **Kubernetes CKA/CKS** - Deepening container orchestration expertise
-- 🔐 **Zero Trust Security** - Implementing next-gen security architectures
-- 📊 **Observability Stack** - Mastering Prometheus, Grafana, and OpenTelemetry
-- 🌩️ **Multi-Cloud Strategy** - AWS, Azure, and GCP integration patterns
-
-</details>
-
-💡 **Philosophy**: *"Every challenge is an opportunity to learn something new. Infrastructure is not just about servers and networks—it's about enabling innovation and empowering teams to build the future."*
-
-<div align="center">
-
-### 🎖️ Achievements & Certifications
-
-[![AWS](https://img.shields.io/badge/AWS-Certified_Solutions_Architect-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/certification/)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-CKA_Candidate-326ce5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://www.cncf.io/certification/cka/)
-[![Docker](https://img.shields.io/badge/Docker-Certified_Associate-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/certification/)
-
-### 🌟 Professional Status
-![Status](https://img.shields.io/badge/Status-Available_for_Collaboration-brightgreen?style=for-the-badge)
-![Open Source](https://img.shields.io/badge/Open_Source-Active_Contributor-orange?style=for-the-badge&logo=github)
-![Mentoring](https://img.shields.io/badge/Mentoring-Available-blue?style=for-the-badge&logo=linkedin)
-
-</div>
-
----
 
 ## 🛠️ Technology Toolbox
 
@@ -141,17 +98,6 @@
 
 </details>
 
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-  
-[![trophy](https://github-profile-trophy.vercel.app/?username=Krishna4K2&theme=tokyonight&no-frame=false&no-bg=true&margin-w=4)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
 
 ## 📊 GitHub Analytics
 
@@ -164,63 +110,6 @@
 
 </div>
 
-<div align="center">
-  
-### 🔥 Contribution Streak
-
-[![GitHub Streak](https://streak-stats.demolab.com/?user=Krishna4K2&theme=tokyonight)](https://git.io/streak-stats)
-
-</div>
-
-<div align="center">
-  
-### 📊 Contribution Graph
-
-[![Krishna's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Krishna4K2&theme=tokyo-night)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
-<div align="center">
-  
-### 📅 Weekly Development Breakdown
-
-<!--START_SECTION:waka-->
-```text
-Still calculating this week's coding time... 🤔
-Check back soon for detailed insights!
-```
-<!--END_SECTION:waka-->
-
-</div>
-
----
-
-## ⚡ Quick Facts
-
-<div align="center">
-
-| 🎯 **Focus** | 🌱 **Learning** | 💬 **Ask me about** | ⚡ **Fun fact** |
-|:---:|:---:|:---:|:---:|
-| Cloud Infrastructure | Advanced Kubernetes | DevOps, Cloud Security | I debug infrastructure issues faster with ☕ |
-| DevSecOps | Zero Trust Architecture | CI/CD Pipelines | I can provision a cluster in 3 cloud providers |
-| Platform Engineering | Service Mesh | Infrastructure as Code | My favorite debugging tool is `kubectl` |
-
-</div>
-
-<details>
-<summary>🎪 <b>More Fun Facts</b></summary>
-
-- 🔧 I once automated a 40-step deployment process into a single command
-- 🌍 I've worked with infrastructure across 5+ cloud providers
-- 📚 I read infrastructure code like others read novels
-- 🎯 My goal: Zero-downtime deployments for everyone
-- 🐛 I find infrastructure bugs oddly satisfying to fix
-- ☁️ I dream in YAML and wake up thinking in Terraform
-
-</details>
-
----
-
 ## 🤝 Let's Connect & Collaborate!
 
 I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
@@ -229,36 +118,125 @@ I'm always excited to connect with fellow engineers, share knowledge, and collab
 
 ### 📫 How to reach me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/krishna4k2)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/krishna4k2)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna4k2@example.com)
-
-### 🎯 Let's talk about:
-`Cloud Architecture` • `DevSecOps` • `Kubernetes` • `Infrastructure as Code` • `CI/CD` • `Site Reliability Engineering`
-
-### 🤝 Open to:
-`💼 Job Opportunities` • `🚀 Consulting Projects` • `📚 Knowledge Sharing` • `👥 Mentoring` • `🤝 Collaboration` • `🎤 Speaking Engagements`
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
 
 </div>
 
----
-
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg" />
+```mermaid
+graph TD
+    subgraph " "
+        direction LR
+        subgraph "PLAN & CODE"
+            A1[Git: Version Control]
+            A2[Jira: Project Management]
+            A3[VSCode: IDE]
+        end
+
+        subgraph "BUILD & INTEGRATE (CI)"
+            B1[Jenkins]
+            B2[GitHub Actions]
+            B3[GitLab CI]
+            B1 --> B4(Build Artifacts)
+            B2 --> B4
+            B3 --> B4
+        end
+
+        subgraph "SECURE (DevSecOps)"
+            C1[SAST: SonarQube]
+            C2[SCA: Snyk / Trivy]
+            C3[Container Scan: Trivy]
+            C4[Policy as Code: OPA]
+        end
+
+        subgraph "DEPLOY (CD)"
+            D1[ArgoCD: GitOps]
+            D2[Flux]
+            D3[Spinnaker]
+        end
+
+        subgraph "OPERATE & MONITOR (SRE)"
+            E1[Prometheus: Metrics]
+            E2[Grafana: Dashboards]
+            E3[ELK Stack: Logging]
+            E4[Jaeger: Tracing]
+            E5[PagerDuty: Alerting]
+        end
+
+        subgraph "PLATFORM (Foundation)"
+            direction LR
+            P1[Kubernetes: Orchestration]
+            P2[Istio / Linkerd: Service Mesh]
+            P3[Backstage: Developer Portal]
+        end
+
+        subgraph "CLOUD (Infrastructure)"
+            direction LR
+            CL1[AWS / GCP / Azure]
+            CL2[Terraform: IaC]
+            CL3[Ansible: Config Mgmt]
+        end
+    end
+
+    %% Connections
+    A1 --> B1
+    A1 --> B2
+    A1 --> B3
+
+    B4 --> C1
+    B4 --> C2
+
+    C1 --> D1
+    C2 --> C3
+    C3 --> D1
+    C4 --> P1
+
+    D1 --> P1
+    D2 --> P1
+    D3 --> P1
+
+    P1 --> E1
+    P1 --> E3
+    P2 --> E4
+
+    E1 --> E2
+    E1 --> E5
+
+    CL2 --> CL1
+    CL3 --> CL1
+    P1 -- Deployed On --> CL1
+
+    style A1 fill:#f9f,stroke:#333,stroke-width:2px
+    style A2 fill:#f9f,stroke:#333,stroke-width:2px
+    style A3 fill:#f9f,stroke:#333,stroke-width:2px
+    style B1 fill:#9cf,stroke:#333,stroke-width:2px
+    style B2 fill:#9cf,stroke:#333,stroke-width:2px
+    style B3 fill:#9cf,stroke:#333,stroke-width:2px
+    style C1 fill:#f00,stroke:#333,stroke-width:2px
+    style C2 fill:#f00,stroke:#333,stroke-width:2px
+    style C3 fill:#f00,stroke:#333,stroke-width:2px
+    style C4 fill:#f00,stroke:#333,stroke-width:2px
+    style D1 fill:#9cf,stroke:#333,stroke-width:2px
+    style D2 fill:#9cf,stroke:#333,stroke-width:2px
+    style D3 fill:#9cf,stroke:#333,stroke-width:2px
+    style E1 fill:#9f9,stroke:#333,stroke-width:2px
+    style E2 fill:#9f9,stroke:#333,stroke-width:2px
+    style E3 fill:#9f9,stroke:#333,stroke-width:2px
+    style E4 fill:#9f9,stroke:#333,stroke-width:2px
+    style E5 fill:#9f9,stroke:#333,stroke-width:2px
+    style P1 fill:#ff9,stroke:#333,stroke-width:4px
+    style P2 fill:#ff9,stroke:#333,stroke-width:2px
+    style P3 fill:#ff9,stroke:#333,stroke-width:2px
+    style CL1 fill:#f96,stroke:#333,stroke-width:4px
+    style CL2 fill:#f96,stroke:#333,stroke-width:2px
+    style CL3 fill:#f96,stroke:#333,stroke-width:2px
+```
 
 ### 💭 *"The best way to learn is by doing. The best way to grow is by sharing."*
 
 ⭐ **Star some repos if you find them useful!** ⭐
-
----
-
-<sub>**🔒 Security Note**: This profile uses only public APIs and doesn't expose any sensitive information</sub><br>
-<sub>**⚡ Performance**: All dynamic content is cached and optimized for fast loading</sub><br>
-<sub>**📊 Stats**: Last updated automatically • Real-time data from GitHub API</sub>
-
-![Profile Views](https://komarev.com/ghpvc/?username=Krishna4K2&color=brightgreen&style=flat-square)
-![Last Updated](https://img.shields.io/badge/last%20updated-today-brightgreen?style=flat-square)
 
 </div>
