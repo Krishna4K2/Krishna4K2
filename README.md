@@ -11,7 +11,7 @@
 
 ## About Me 👨‍💻
 
-🔥 I wil be there where engineering, security, and operations meet and stay hands-on by doing projects and experiments ( *Every challenge is an opportunity to learn something new* )
+🔥 I will be there where engineering, security, and operations meet and stay hands-on by doing projects and experiments ( *Every challenge is an opportunity to learn something new* )
 
 <details>
 <summary>🎯 <b>Focus Areas</b></summary>
