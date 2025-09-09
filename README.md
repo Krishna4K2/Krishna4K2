@@ -2,7 +2,7 @@
   
 # Hello!👋, I'm Krishna | Automate⚙️, Scale☁️ & Secure🛡️
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=25&duration=3000&pause=1000&color=36BCF7FF&center=true&width=600&lines=DevOps+Engineer+%7C+Cloud+Architect;DevSecOps+Specialist+%7C+SRE;Platform+Engineer+%7C+Infrastructure+Expert;Building+Scalable+Cloud+Solutions;🚀+Always+Learning+%7C+Always+Growing+🚀)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=23&duration=3000&pause=1000&color=36BCF7FF&center=true&width=600&lines=DevOps+Engineer+%7C+Cloud+Architect;DevSecOps+Specialist+%7C+SRE;Platform+Engineer+%7C+Infrastructure+Expert;Building+Scalable+Cloud+Solutions;🚀+Always+Learning+%7C+Always+Growing+🚀)](https://git.io/typing-svg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Krishna4K2&label=Profile%20views&color=0e75b6&style=flat)
 [![GitHub followers](https://img.shields.io/github/followers/Krishna4K2?label=Followers&style=social)](https://github.com/Krishna4K2?tab=followers)
@@ -11,7 +11,7 @@
 
 ## About Me 👨‍💻
 
-🔥 I wil be there where engineering, security, and operations meet and stay hands-on by doing projects and experiments (*Every challenge is an opportunity to learn something new* )
+🔥 I wil be there where engineering, security, and operations meet and stay hands-on by doing projects and experiments ( *Every challenge is an opportunity to learn something new* )
 
 <details>
 <summary>🎯 <b>Focus Areas</b></summary>
@@ -199,20 +199,14 @@ graph TD
 
 I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
 
-<div align="center">
-
-### 📫 How to reach me
+📫 How to reach me
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
 
-</div>
-
 <div align="center">
 
-### 💭 *"The best way to learn is by doing. The best way to grow is by sharing."*
-
-⭐ **Star some repos if you find them useful!** ⭐
+⭐ **"The best way to learn is by doing. The best way to grow is by sharing."** ⭐
 
 </div>
