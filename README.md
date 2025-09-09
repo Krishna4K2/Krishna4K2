@@ -28,7 +28,7 @@
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Google](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 ### 🔧 **DevOps & Infrastructure**
 
@@ -59,6 +59,7 @@
 ![Falco](https://img.shields.io/badge/falco-%23005066.svg?style=for-the-badge&logo=falco&logoColor=white)
 ![Trivy](https://img.shields.io/badge/trivy-00979D.svg?style=for-the-badge&logo=trivy&logoColor=white)
 
+
 ### 💻 **Programming & Scripting**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -78,7 +79,7 @@
 
 
 ```mermaid
-graph TB
+graph LR
     subgraph main[" "]
         direction TB
         
@@ -234,13 +235,14 @@ graph TB
 
 I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
 
-📫 How to reach me 👉 
+📫 How to reach me 👇
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
 
 <div align="center">
 
-⭐ **"The best way to learn is by doing. The best way to grow is by sharing."** ⭐
+🌟 **"The best way to learn is by doing. The best way to grow is by sharing."** 🌟
 
 </div>
