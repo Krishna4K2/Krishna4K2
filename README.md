@@ -199,8 +199,7 @@ graph TD
 
 I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
 
-📫 How to reach me
-
+📫 How to reach me 👉 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
