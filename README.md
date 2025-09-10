@@ -76,7 +76,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch)
 
-![Chart Flow](flowchart2.svg)
+![Chart Flow](./docs/flowchart2.svg)
 
 ## 🤝 Let's Connect & Collaborate!
 
