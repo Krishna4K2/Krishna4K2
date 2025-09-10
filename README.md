@@ -79,156 +79,179 @@
 
 
 ```mermaid
-graph LR
-    subgraph main[" "]
-        direction TB
-        
-        subgraph dev["🔧 DEVELOPMENT PHASE"]
-            direction LR
-            subgraph plan["📋 PLAN & CODE"]
-                A1["🔀 Git<br/>Version Control"]
-                A2["📊 Jira<br/>Project Management"]
-                A3["💻 VS Code<br/>IDE & Development"]
-            end
-        end
-        
-        subgraph ci["🚀 CONTINUOUS INTEGRATION"]
-            direction LR
-            B1["🔨 Jenkins<br/>Build Server"]
-            B2["⚡ GitHub Actions<br/>Cloud Native CI"]
-            B3["🦊 GitLab CI<br/>Integrated Pipeline"]
-            B4["📦 Build Artifacts<br/>Container Images"]
-        end
-        
-        subgraph security["🛡️ SECURITY & COMPLIANCE"]
-            direction TB
-            subgraph sast["Static Analysis"]
-                C1["🔍 SonarQube<br/>Code Quality"]
-                C2["🔐 Snyk/Trivy<br/>Vulnerability Scan"]
-            end
-            subgraph runtime["Runtime Security"]
-                C3["🐳 Container Scan<br/>Image Security"]
-                C4["📋 OPA<br/>Policy as Code"]
-            end
-        end
-        
-        subgraph cd["🚢 CONTINUOUS DEPLOYMENT"]
-            direction LR
-            D1["🔄 ArgoCD<br/>GitOps Delivery"]
-            D2["🌊 Flux<br/>GitOps Controller"]
-            D3["🎯 Spinnaker<br/>Multi-Cloud Deploy"]
-        end
-        
-        subgraph platform["⚙️ PLATFORM & ORCHESTRATION"]
-            direction TB
-            P1["☸️ Kubernetes<br/>Container Orchestration"]
-            P2["🕸️ Service Mesh<br/>Istio/Linkerd"]
-            P3["🏗️ Backstage<br/>Developer Portal"]
-        end
-        
-        subgraph monitoring["📊 OBSERVABILITY & SRE"]
-            direction TB
-            subgraph metrics["Metrics & Monitoring"]
-                E1["📈 Prometheus<br/>Metrics Collection"]
-                E2["📊 Grafana<br/>Visualization"]
-            end
-            subgraph logging["Logging & Tracing"]
-                E3["📝 ELK Stack<br/>Log Analytics"]
-                E4["🔍 Jaeger<br/>Distributed Tracing"]
-            end
-            E5["🚨 PagerDuty<br/>Incident Management"]
-        end
-        
-        subgraph cloud["☁️ CLOUD INFRASTRUCTURE"]
-            direction TB
-            CL1["🌐 Multi-Cloud<br/>AWS • GCP • Azure"]
-            CL2["🏗️ Terraform<br/>Infrastructure as Code"]
-            CL3["⚙️ Ansible<br/>Configuration Management"]
-        end
+flowchart LR
+    %% =============================================================================
+    %% 🚀 MODERNIZED DEVOPS PLATFORM ENGINEERING PIPELINE - LEFT TO RIGHT FLOW
+    %% =============================================================================
+    
+    %% Development & Planning Phase
+    subgraph DEV["🔧 DEVELOPMENT & PLANNING"]
+        direction LR
+        A1[("🔀 Git<br/>Version Control<br/>• Branching Strategy<br/>• Code Reviews")]
+        A2[("📊 Jira<br/>Project Management<br/>• Sprint Planning<br/>• Issue Tracking")]
+        A3[("💻 VS Code<br/>IDE & Development<br/>• Extensions<br/>• IntelliSense")]
+        A4[("🔍 Pre-commit<br/>Hooks & Linting<br/>• Code Quality<br/>• Standards")]
     end
     
-    %% Enhanced Flow Connections
-    A1 -.-> B1
-    A1 -.-> B2  
-    A1 -.-> B3
+    %% Continuous Integration Pipeline
+    subgraph CI["🚀 CONTINUOUS INTEGRATION PIPELINE"]
+        direction LR
+        B1[("🔨 Jenkins<br/>Enterprise CI<br/>• Pipeline as Code<br/>• Blue Ocean")]
+        B2[("⚡ GitHub Actions<br/>Cloud Native CI<br/>• Matrix Builds<br/>• Reusable Workflows")]
+        B3[("🦊 GitLab CI<br/>Integrated DevOps<br/>• Auto DevOps<br/>• Review Apps")]
+        B4[("📦 Build Artifacts<br/>Container Registry<br/>• Multi-arch Images<br/>• Signed Artifacts")]
+    end
     
-    B1 --> B4
-    B2 --> B4
-    B3 --> B4
+    %% Security & Compliance Gate
+    subgraph SEC["🛡️ SECURITY & COMPLIANCE GATEWAY"]
+        direction LR
+        C1[("🔍 SonarQube<br/>Code Quality<br/>• Tech Debt<br/>• Coverage")]
+        C2[("🔐 Snyk/Trivy<br/>Vulnerability Scan<br/>• CVE Detection<br/>• License Check")]
+        C3[("🐳 Container Security<br/>Image Scanning<br/>• Runtime Policies<br/>• Admission Control")]
+        C4[("📋 OPA Gatekeeper<br/>Policy as Code<br/>• Compliance<br/>• Governance")]
+    end
     
-    B4 ==> C1
-    B4 ==> C2
-    C1 --> C3
-    C2 --> C3
+    %% GitOps & Deployment
+    subgraph CD["🚢 GITOPS & CONTINUOUS DEPLOYMENT"]
+        direction LR
+        D1[("🔄 ArgoCD<br/>GitOps Engine<br/>• App of Apps<br/>• Progressive Sync")]
+        D2[("🌊 Flux v2<br/>GitOps Toolkit<br/>• Helm Controller<br/>• Source Controller")]
+        D3[("🎯 Spinnaker<br/>Multi-Cloud Deploy<br/>• Canary Analysis<br/>• Traffic Splitting")]
+    end
     
-    C3 ==> D1
-    C4 --> P1
+    %% Platform & Runtime
+    subgraph PLATFORM["⚙️ PLATFORM & RUNTIME ORCHESTRATION"]
+        direction LR
+        P1[("☸️ Kubernetes<br/>Container Platform<br/>• Multi-cluster<br/>• Auto-scaling")]
+        P2[("🕸️ Service Mesh<br/>Istio/Linkerd<br/>• mTLS<br/>• Traffic Management")]
+        P3[("🏗️ Backstage<br/>Developer Portal<br/>• Service Catalog<br/>• Templates")]
+        P4[("🔌 Crossplane<br/>Infrastructure APIs<br/>• Cloud Resources<br/>• Compositions")]
+    end
     
-    D1 ==> P1
-    D2 --> P1
-    D3 --> P1
+    %% Infrastructure Foundation
+    subgraph INFRA["☁️ CLOUD INFRASTRUCTURE FOUNDATION"]
+        direction LR
+        I1[("🏗️ Terraform<br/>Infrastructure as Code<br/>• State Management<br/>• Modules")]
+        I2[("⚙️ Ansible<br/>Configuration Mgmt<br/>• Playbooks<br/>• Tower/AWX")]
+        I3[("🌐 Multi-Cloud<br/>AWS • GCP • Azure<br/>• Hybrid Cloud<br/>• Edge Computing")]
+        I4[("🔐 HashiCorp Vault<br/>Secrets Management<br/>• Dynamic Secrets<br/>• PKI")]
+    end
     
-    P1 ==> E1
-    P1 --> E3
-    P2 --> E4
+    %% Observability & SRE
+    subgraph OBS["📊 OBSERVABILITY & SITE RELIABILITY"]
+        direction LR
+        O1[("📈 Prometheus<br/>Metrics & Alerting<br/>• Recording Rules<br/>• Federation")]
+        O2[("📊 Grafana<br/>Visualization<br/>• Dashboards<br/>• Alerting")]
+        O3[("📝 ELK/EFK Stack<br/>Log Analytics<br/>• Fluentd/Fluent Bit<br/>• Kibana")]
+        O4[("🔍 Jaeger/Zipkin<br/>Distributed Tracing<br/>• Performance<br/>• Debugging")]
+        O5[("🚨 PagerDuty<br/>Incident Response<br/>• On-call<br/>• Escalation")]
+    end
     
-    E1 --> E2
-    E1 --> E5
-    E3 --> E5
-    E4 --> E2
+    %% =============================================================================
+    %% ENHANCED PIPELINE FLOW CONNECTIONS
+    %% =============================================================================
     
-    CL2 ==> CL1
-    CL3 --> CL1
-    P1 -.-> CL1
+    %% Development to CI Flow
+    A1 -->|"Code Push"| B1
+    A1 -->|"GitHub Integration"| B2
+    A1 -->|"GitLab Integration"| B3
+    A4 -->|"Quality Gates"| B1
     
-    %% Modern Styling with Better Color Scheme
-    %% Development Phase - Purple Theme
-    style A1 fill:#8B5FBF,stroke:#6A4C8C,stroke-width:3px,color:#fff
-    style A2 fill:#9A6FB0,stroke:#7A5690,stroke-width:3px,color:#fff
-    style A3 fill:#AB7FA1,stroke:#8B6581,stroke-width:3px,color:#fff
+    %% CI to Build Artifacts
+    B1 -->|"Build & Test"| B4
+    B2 -->|"Build & Test"| B4
+    B3 -->|"Build & Test"| B4
     
-    %% CI Phase - Blue Theme
-    style B1 fill:#4A90E2,stroke:#3570B2,stroke-width:3px,color:#fff
-    style B2 fill:#5BA0F2,stroke:#3B80D2,stroke-width:3px,color:#fff
-    style B3 fill:#6CB0FF,stroke:#4C90DF,stroke-width:3px,color:#fff
-    style B4 fill:#7DC0FF,stroke:#5DA0EF,stroke-width:4px,color:#fff
+    %% Security Scanning Pipeline
+    B4 -->|"Code Analysis"| C1
+    B4 -->|"Vulnerability Scan"| C2
+    B4 -->|"Container Scan"| C3
+    C1 & C2 & C3 -->|"Policy Validation"| C4
     
-    %% Security Phase - Red/Orange Theme
-    style C1 fill:#E74C3C,stroke:#C73E1D,stroke-width:3px,color:#fff
-    style C2 fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#fff
-    style C3 fill:#E67E22,stroke:#D68910,stroke-width:3px,color:#fff
-    style C4 fill:#F1948A,stroke:#EC7063,stroke-width:3px,color:#fff
+    %% GitOps Deployment Flow
+    C4 -->|"Security Approved"| D1
+    C4 -->|"Security Approved"| D2
+    C4 -->|"Security Approved"| D3
     
-    %% CD Phase - Green Theme
-    style D1 fill:#27AE60,stroke:#239B56,stroke-width:3px,color:#fff
-    style D2 fill:#58D68D,stroke:#52C370,stroke-width:3px,color:#fff
-    style D3 fill:#82E0AA,stroke:#6DD084,stroke-width:3px,color:#fff
+    %% Platform Deployment
+    D1 -->|"GitOps Sync"| P1
+    D2 -->|"GitOps Sync"| P1
+    D3 -->|"Deployment"| P1
+    P1 -->|"Service Discovery"| P2
+    P1 & P2 -->|"Developer Experience"| P3
     
-    %% Platform Phase - Yellow/Gold Theme
-    style P1 fill:#F39C12,stroke:#E67E22,stroke-width:4px,color:#fff
-    style P2 fill:#F4D03F,stroke:#F1C40F,stroke-width:3px,color:#fff
-    style P3 fill:#F7DC6F,stroke:#F4D03F,stroke-width:3px,color:#fff
+    %% Infrastructure Provisioning
+    I1 -->|"Provision"| I3
+    I2 -->|"Configure"| I3
+    I4 -->|"Secrets"| P1
+    P4 -->|"Cloud Resources"| I3
     
-    %% Monitoring Phase - Teal Theme
-    style E1 fill:#17A2B8,stroke:#138496,stroke-width:3px,color:#fff
-    style E2 fill:#20C997,stroke:#1ABC9C,stroke-width:3px,color:#fff
-    style E3 fill:#48CAE4,stroke:#0077B6,stroke-width:3px,color:#fff
-    style E4 fill:#90E0EF,stroke:#00B4D8,stroke-width:3px,color:#fff
-    style E5 fill:#CAF0F8,stroke:#0096C7,stroke-width:3px,color:#000
+    %% Observability Integration
+    P1 -->|"Metrics"| O1
+    P1 -->|"Logs"| O3
+    P2 -->|"Tracing"| O4
+    O1 -->|"Visualization"| O2
+    O1 & O3 & O4 -->|"Alerting"| O5
     
-    %% Cloud Phase - Gradient Blue Theme
-    style CL1 fill:#667EEA,stroke:#764BA2,stroke-width:4px,color:#fff
-    style CL2 fill:#764BA2,stroke:#667EEA,stroke-width:3px,color:#fff
-    style CL3 fill:#9575DE,stroke:#667EEA,stroke-width:3px,color:#fff
+    %% Feedback Loops
+    O5 -.->|"Incident Feedback"| A2
+    O2 -.->|"Performance Insights"| A1
+    P3 -.->|"Developer Feedback"| A1
     
-    %% Section Styling
-    style dev fill:#F8F9FA,stroke:#6C757D,stroke-width:2px,stroke-dasharray: 5 5
-    style ci fill:#E3F2FD,stroke:#1976D2,stroke-width:2px,stroke-dasharray: 5 5
-    style security fill:#FFEBEE,stroke:#D32F2F,stroke-width:2px,stroke-dasharray: 5 5
-    style cd fill:#E8F5E8,stroke:#388E3C,stroke-width:2px,stroke-dasharray: 5 5
-    style platform fill:#FFF8E1,stroke:#F57C00,stroke-width:2px,stroke-dasharray: 5 5
-    style monitoring fill:#E0F2F1,stroke:#00796B,stroke-width:2px,stroke-dasharray: 5 5
-    style cloud fill:#E8EAF6,stroke:#3F51B5,stroke-width:2px,stroke-dasharray: 5 5
+    %% =============================================================================
+    %% ADVANCED STYLING & VISUAL ENHANCEMENTS
+    %% =============================================================================
+    
+    %% Development Phase - Modern Purple Gradient
+    style A1 fill:#667eea,stroke:#764ba2,stroke-width:3px,color:#fff
+    style A2 fill:#764ba2,stroke:#667eea,stroke-width:3px,color:#fff
+    style A3 fill:#8b5fbf,stroke:#6a4c8c,stroke-width:3px,color:#fff
+    style A4 fill:#9a6fb0,stroke:#7a5690,stroke-width:3px,color:#fff
+    
+    %% CI Phase - Blue Ocean Theme
+    style B1 fill:#4facfe,stroke:#00f2fe,stroke-width:3px,color:#fff
+    style B2 fill:#43e97b,stroke:#38f9d7,stroke-width:3px,color:#fff
+    style B3 fill:#fa709a,stroke:#fee140,stroke-width:3px,color:#fff
+    style B4 fill:#a8edea,stroke:#fed6e3,stroke-width:4px,color:#000
+    
+    %% Security Phase - Red/Orange Gradient
+    style C1 fill:#ff6b6b,stroke:#ee5a6f,stroke-width:3px,color:#fff
+    style C2 fill:#feca57,stroke:#ff9ff3,stroke-width:3px,color:#fff
+    style C3 fill:#ff9068,stroke:#fd746c,stroke-width:3px,color:#fff
+    style C4 fill:#f093fb,stroke:#f5576c,stroke-width:3px,color:#fff
+    
+    %% CD Phase - Green Success Theme
+    style D1 fill:#4ecdc4,stroke:#44a08d,stroke-width:3px,color:#fff
+    style D2 fill:#96fbc4,stroke:#f9f047,stroke-width:3px,color:#fff
+    style D3 fill:#5ee7df,stroke:#66a6ff,stroke-width:3px,color:#fff
+    
+    %% Platform Phase - Yellow/Gold Enterprise
+    style P1 fill:#ffecd2,stroke:#fcb69f,stroke-width:4px,color:#000
+    style P2 fill:#a8edea,stroke:#fed6e3,stroke-width:3px,color:#000
+    style P3 fill:#ffd89b,stroke:#19547b,stroke-width:3px,color:#fff
+    style P4 fill:#89f7fe,stroke:#66a6ff,stroke-width:3px,color:#000
+    
+    %% Infrastructure Phase - Cloud Blue
+    style I1 fill:#667eea,stroke:#764ba2,stroke-width:3px,color:#fff
+    style I2 fill:#f093fb,stroke:#f5576c,stroke-width:3px,color:#fff
+    style I3 fill:#4facfe,stroke:#00f2fe,stroke-width:4px,color:#fff
+    style I4 fill:#43e97b,stroke:#38f9d7,stroke-width:3px,color:#fff
+    
+    %% Observability Phase - Monitoring Teal
+    style O1 fill:#48cae4,stroke:#0077b6,stroke-width:3px,color:#fff
+    style O2 fill:#90e0ef,stroke:#00b4d8,stroke-width:3px,color:#000
+    style O3 fill:#caf0f8,stroke:#0096c7,stroke-width:3px,color:#000
+    style O4 fill:#023e8a,stroke:#0077b6,stroke-width:3px,color:#fff
+    style O5 fill:#ff006e,stroke:#c77dff,stroke-width:3px,color:#fff
+    
+    %% Section Container Styling
+    style DEV fill:#f8f9fa,stroke:#6c757d,stroke-width:3px,stroke-dasharray:10 5
+    style CI fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,stroke-dasharray:10 5
+    style SEC fill:#ffebee,stroke:#d32f2f,stroke-width:3px,stroke-dasharray:10 5
+    style CD fill:#e8f5e8,stroke:#388e3c,stroke-width:3px,stroke-dasharray:10 5
+    style PLATFORM fill:#fff8e1,stroke:#f57c00,stroke-width:3px,stroke-dasharray:10 5
+    style INFRA fill:#e8eaf6,stroke:#3f51b5,stroke-width:3px,stroke-dasharray:10 5
+    style OBS fill:#e0f2f1,stroke:#00796b,stroke-width:3px,stroke-dasharray:10 5
 ```
 
 ## 🤝 Let's Connect & Collaborate!
