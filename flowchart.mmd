@@ -1,0 +1,83 @@
+---
+config:
+  theme: default
+  themeVariables:
+    fontSize: 14px
+  layout: elk
+---
+flowchart LR
+ subgraph plan["📋 PLAN & CODE"]
+        A1["🔀 Git (GitHub/GitLab)"]
+        A2["📊 Jira / Agile Boards"]
+        A3["💻 IDEs (VS Code, JetBrains)"]
+  end
+ subgraph ci["🚀 BUILD & CI"]
+        B1["Jenkins"]
+        B2["GitHub Actions"]
+        B3["GitLab CI"]
+        B4["📦 Artifact Repos (Nexus, GHCR, Artifactory)"]
+  end
+ subgraph security["🛡️ DEVSECOPS"]
+        S1["SAST (SonarQube, Semgrep)"]
+        S2["DAST (OWASP ZAP)"]
+        S3["Dependency Scan (Trivy, Snyk)"]
+        S4["SBOM & Signing (Cosign, Sigstore)"]
+        S5["Secrets Mgmt (Vault, AWS SM)"]
+        S6["Policy as Code (OPA, Kyverno)"]
+  end
+ subgraph cd["🚢 DELIVERY & GITOPS"]
+        D1["ArgoCD"]
+        D2["Flux"]
+        D3["Spinnaker"]
+  end
+ subgraph platform["⚙️ PLATFORM ENGINEERING"]
+        P1["☸️ Kubernetes"]
+        P2["🕸️ Service Mesh (Istio/Linkerd)"]
+        P3["🏗️ Backstage (IDP / Golden Paths)"]
+        P4["🔐 API Gateway (Kong, Apigee)"]
+  end
+ subgraph infra["☁️ CLOUD & INFRA"]
+        CL1["🌐 Multi-Cloud (AWS, GCP, Azure)"]
+        CL2["🏗️ Terraform (IaC)"]
+        CL3["⚙️ Ansible / Puppet"]
+        CL4["📦 Helm / Kustomize"]
+  end
+ subgraph sre["🔧 RELIABILITY & OPS"]
+        R1["💥 Chaos Eng (LitmusChaos, Gremlin)"]
+        R2["⚖️ Scaling (HPA, Karpenter)"]
+        R3["🔄 Service Recovery (Runbooks, Auto-heal)"]
+  end
+ subgraph monitoring["📊 OBSERVABILITY"]
+        M1["📈 Prometheus"]
+        M2["📊 Grafana"]
+        M3["📝 Logs (ELK / Loki)"]
+        M4["🔍 Tracing (Jaeger, Tempo)"]
+        M5["🚨 Incident Mgmt (PagerDuty, OpsGenie)"]
+        M6["💰 FinOps (Kubecost, CloudHealth)"]
+        M7["🌱 GreenOps (Carbon Aware K8s)"]
+  end
+    plan L_plan_ci_0@--> ci
+    ci L_ci_security_0@--> security
+    security L_security_cd_0@--> cd
+    cd L_cd_platform_0@--> platform
+    platform L_platform_infra_0@--> infra
+    infra L_infra_sre_0@--> sre
+    sre L_sre_monitoring_0@--> monitoring
+    monitoring L_monitoring_plan_0@--> plan
+    S4 --> cd
+    D1 --> P1
+    CL2 --> CL1
+    CL3 --> CL1
+    CL4 --> P1
+    P1 --> M1 & M3
+    M1 --> M2
+    M3 --> M2
+    M2 --> M5
+    L_plan_ci_0@{ animation: slow } 
+    L_ci_security_0@{ animation: fast } 
+    L_security_cd_0@{ animation: slow } 
+    L_cd_platform_0@{ animation: slow } 
+    L_platform_infra_0@{ animation: slow } 
+    L_infra_sre_0@{ animation: slow } 
+    L_sre_monitoring_0@{ animation: slow } 
+    L_monitoring_plan_0@{ animation: slow }

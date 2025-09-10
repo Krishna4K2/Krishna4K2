@@ -28,7 +28,7 @@
 
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Google](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 ### 🔧 **DevOps & Infrastructure**
 
@@ -59,6 +59,7 @@
 ![Falco](https://img.shields.io/badge/falco-%23005066.svg?style=for-the-badge&logo=falco&logoColor=white)
 ![Trivy](https://img.shields.io/badge/trivy-00979D.svg?style=for-the-badge&logo=trivy&logoColor=white)
 
+
 ### 💻 **Programming & Scripting**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -75,137 +76,20 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![ElasticSearch](https://img.shields.io/badge/-ElasticSearch-005571?style=for-the-badge&logo=elasticsearch)
 
-## 📊 GitHub Analytics
-
-<div align="center">
-  
-### 📈 GitHub Stats & Activity
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Krishna4K2&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krishna4K2&layout=compact&langs_count=8&theme=tokyonight"/>
-
-</div>
-
-```mermaid
-graph TD
-    subgraph " "
-        direction LR
-        subgraph "PLAN & CODE"
-            A1[Git: Version Control]
-            A2[Jira: Project Management]
-            A3[VSCode: IDE]
-        end
-
-        subgraph "BUILD & INTEGRATE (CI)"
-            B1[Jenkins]
-            B2[GitHub Actions]
-            B3[GitLab CI]
-            B1 --> B4(Build Artifacts)
-            B2 --> B4
-            B3 --> B4
-        end
-
-        subgraph "SECURE (DevSecOps)"
-            C1[SAST: SonarQube]
-            C2[SCA: Snyk / Trivy]
-            C3[Container Scan: Trivy]
-            C4[Policy as Code: OPA]
-        end
-
-        subgraph "DEPLOY (CD)"
-            D1[ArgoCD: GitOps]
-            D2[Flux]
-            D3[Spinnaker]
-        end
-
-        subgraph "OPERATE & MONITOR (SRE)"
-            E1[Prometheus: Metrics]
-            E2[Grafana: Dashboards]
-            E3[ELK Stack: Logging]
-            E4[Jaeger: Tracing]
-            E5[PagerDuty: Alerting]
-        end
-
-        subgraph "PLATFORM (Foundation)"
-            direction LR
-            P1[Kubernetes: Orchestration]
-            P2[Istio / Linkerd: Service Mesh]
-            P3[Backstage: Developer Portal]
-        end
-
-        subgraph "CLOUD (Infrastructure)"
-            direction LR
-            CL1[AWS / GCP / Azure]
-            CL2[Terraform: IaC]
-            CL3[Ansible: Config Mgmt]
-        end
-    end
-
-    %% Connections
-    A1 --> B1
-    A1 --> B2
-    A1 --> B3
-
-    B4 --> C1
-    B4 --> C2
-
-    C1 --> D1
-    C2 --> C3
-    C3 --> D1
-    C4 --> P1
-
-    D1 --> P1
-    D2 --> P1
-    D3 --> P1
-
-    P1 --> E1
-    P1 --> E3
-    P2 --> E4
-
-    E1 --> E2
-    E1 --> E5
-
-    CL2 --> CL1
-    CL3 --> CL1
-    P1 -- Deployed On --> CL1
-
-    style A1 fill:#f9f,stroke:#333,stroke-width:2px
-    style A2 fill:#f9f,stroke:#333,stroke-width:2px
-    style A3 fill:#f9f,stroke:#333,stroke-width:2px
-    style B1 fill:#9cf,stroke:#333,stroke-width:2px
-    style B2 fill:#9cf,stroke:#333,stroke-width:2px
-    style B3 fill:#9cf,stroke:#333,stroke-width:2px
-    style C1 fill:#f00,stroke:#333,stroke-width:2px
-    style C2 fill:#f00,stroke:#333,stroke-width:2px
-    style C3 fill:#f00,stroke:#333,stroke-width:2px
-    style C4 fill:#f00,stroke:#333,stroke-width:2px
-    style D1 fill:#9cf,stroke:#333,stroke-width:2px
-    style D2 fill:#9cf,stroke:#333,stroke-width:2px
-    style D3 fill:#9cf,stroke:#333,stroke-width:2px
-    style E1 fill:#9f9,stroke:#333,stroke-width:2px
-    style E2 fill:#9f9,stroke:#333,stroke-width:2px
-    style E3 fill:#9f9,stroke:#333,stroke-width:2px
-    style E4 fill:#9f9,stroke:#333,stroke-width:2px
-    style E5 fill:#9f9,stroke:#333,stroke-width:2px
-    style P1 fill:#ff9,stroke:#333,stroke-width:4px
-    style P2 fill:#ff9,stroke:#333,stroke-width:2px
-    style P3 fill:#ff9,stroke:#333,stroke-width:2px
-    style CL1 fill:#f96,stroke:#333,stroke-width:4px
-    style CL2 fill:#f96,stroke:#333,stroke-width:2px
-    style CL3 fill:#f96,stroke:#333,stroke-width:2px
-```
+![Chart Flow](flowchart2.svg)
 
 ## 🤝 Let's Connect & Collaborate!
 
 I'm always excited to connect with fellow engineers, share knowledge, and collaborate on innovative projects! Whether you want to discuss cloud architecture, share DevOps best practices, or explore new technologies together - let's chat!
 
-📫 How to reach me 👉 
+📫 How to reach me 👇
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna4k2/)
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Krishna4K2)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:krishna.ch.tech@gmail.com)
 
 <div align="center">
 
-⭐ **"The best way to learn is by doing. The best way to grow is by sharing."** ⭐
+🌟 **"The best way to learn is by doing. The best way to grow is by sharing."** 🌟
 
 </div>
