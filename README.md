@@ -79,157 +79,307 @@
 
 
 ```mermaid
-graph LR
-    subgraph main[" "]
+flowchart LR
+    %% ==== PLANNING & DEVELOPMENT ====
+    subgraph PLAN["📋 PLAN & DESIGN"]
         direction TB
-        
-        subgraph dev["🔧 DEVELOPMENT PHASE"]
-            direction LR
-            subgraph plan["📋 PLAN & CODE"]
-                A1["🔀 Git<br/>Version Control"]
-                A2["📊 Jira<br/>Project Management"]
-                A3["💻 VS Code<br/>IDE & Development"]
-            end
+        A1["🔀 Git<br/>📍 Version Control<br/>🎯 DevOps • Platform"]
+        A2["📊 Jira • Confluence<br/>📍 Project Management<br/>🎯 All Roles"]
+        A3["🎨 Figma • Sketch<br/>📍 Design & Prototyping<br/>🎯 Platform • UX"]
+        A4["📋 Linear • Notion<br/>📍 Task Management<br/>🎯 All Roles"]
+    end
+
+    %% ==== CONTINUOUS INTEGRATION ====
+    subgraph CI["🚀 CONTINUOUS INTEGRATION"]
+        direction TB
+        subgraph CI_SERVERS["🏗️ CI Servers"]
+            B1["🔨 Jenkins<br/>📍 Enterprise CI/CD<br/>🎯 DevOps • Platform"]
+            B2["⚡ GitHub Actions<br/>📍 Cloud-Native CI<br/>🎯 DevOps • DevSecOps"]
+            B3["🦊 GitLab CI<br/>📍 Integrated DevOps<br/>🎯 DevOps • DevSecOps"]
+            B4["🔵 CircleCI<br/>📍 Speed & Efficiency<br/>🎯 DevOps"]
         end
         
-        subgraph ci["🚀 CONTINUOUS INTEGRATION"]
-            direction LR
-            B1["🔨 Jenkins<br/>Build Server"]
-            B2["⚡ GitHub Actions<br/>Cloud Native CI"]
-            B3["🦊 GitLab CI<br/>Integrated Pipeline"]
-            B4["📦 Build Artifacts<br/>Container Images"]
-        end
-        
-        subgraph security["🛡️ SECURITY & COMPLIANCE"]
-            direction TB
-            subgraph sast["Static Analysis"]
-                C1["🔍 SonarQube<br/>Code Quality"]
-                C2["🔐 Snyk/Trivy<br/>Vulnerability Scan"]
-            end
-            subgraph runtime["Runtime Security"]
-                C3["🐳 Container Scan<br/>Image Security"]
-                C4["📋 OPA<br/>Policy as Code"]
-            end
-        end
-        
-        subgraph cd["🚢 CONTINUOUS DEPLOYMENT"]
-            direction LR
-            D1["🔄 ArgoCD<br/>GitOps Delivery"]
-            D2["🌊 Flux<br/>GitOps Controller"]
-            D3["🎯 Spinnaker<br/>Multi-Cloud Deploy"]
-        end
-        
-        subgraph platform["⚙️ PLATFORM & ORCHESTRATION"]
-            direction TB
-            P1["☸️ Kubernetes<br/>Container Orchestration"]
-            P2["🕸️ Service Mesh<br/>Istio/Linkerd"]
-            P3["🏗️ Backstage<br/>Developer Portal"]
-        end
-        
-        subgraph monitoring["📊 OBSERVABILITY & SRE"]
-            direction TB
-            subgraph metrics["Metrics & Monitoring"]
-                E1["📈 Prometheus<br/>Metrics Collection"]
-                E2["📊 Grafana<br/>Visualization"]
-            end
-            subgraph logging["Logging & Tracing"]
-                E3["📝 ELK Stack<br/>Log Analytics"]
-                E4["🔍 Jaeger<br/>Distributed Tracing"]
-            end
-            E5["🚨 PagerDuty<br/>Incident Management"]
-        end
-        
-        subgraph cloud["☁️ CLOUD INFRASTRUCTURE"]
-            direction TB
-            CL1["🌐 Multi-Cloud<br/>AWS • GCP • Azure"]
-            CL2["🏗️ Terraform<br/>Infrastructure as Code"]
-            CL3["⚙️ Ansible<br/>Configuration Management"]
+        subgraph BUILD_DEPS["📦 Build & Dependencies"]
+            B5["⚙️ Maven • Gradle<br/>📍 Java Build Tools<br/>🎯 DevOps"]
+            B6["📦 NPM • Yarn • PNPM<br/>📍 Package Management<br/>🎯 DevOps • Platform"]
+            B7["🐹 Go Modules<br/>📍 Go Dependencies<br/>🎯 Platform • Cloud"]
+            B8["🐍 Poetry • Pip<br/>📍 Python Packaging<br/>🎯 DevOps • Platform"]
         end
     end
+
+    %% ==== SECURITY & COMPLIANCE ====
+    subgraph SECURITY["🛡️ SECURITY & COMPLIANCE"]
+        direction TB
+        subgraph SAST["🔍 Static Analysis (SAST)"]
+            C1["🔍 SonarQube • SonarCloud<br/>📍 Code Quality & Security<br/>🎯 DevSecOps • DevOps"]
+            C2["🔐 Snyk • Trivy<br/>📍 Vulnerability Scanning<br/>🎯 DevSecOps"]
+            C3["⚖️ Checkmarx • Veracode<br/>📍 Enterprise SAST<br/>🎯 DevSecOps"]
+        end
+        
+        subgraph IAC_SEC["📜 IaC Security"]
+            C4["🛡️ tfsec • Checkov<br/>📍 Infrastructure Security<br/>🎯 DevSecOps • Cloud"]
+            C5["🔒 Terrascan • Bridgecrew<br/>📍 Policy Compliance<br/>🎯 DevSecOps • Cloud"]
+        end
+
+        subgraph DAST["🎯 Dynamic Analysis"]
+            C6["🕷️ OWASP ZAP<br/>📍 Web App Security<br/>🎯 DevSecOps"]
+            C7["🔬 Burp Suite<br/>📍 Penetration Testing<br/>🎯 DevSecOps"]
+        end
+    end
+
+    %% ==== ARTIFACT MANAGEMENT ====
+    subgraph ARTIFACTS["📦 ARTIFACT REPOSITORY"]
+        direction TB
+        D1["📚 JFrog Artifactory<br/>📍 Universal Repository<br/>🎯 DevOps • Platform"]
+        D2["📦 Nexus Repository<br/>📍 Component Management<br/>🎯 DevOps"]
+        D3["🐳 Docker Hub • ECR • GCR<br/>📍 Container Registries<br/>🎯 DevOps • Platform"]
+        D4["📋 Harbor • Quay<br/>📍 Enterprise Registries<br/>🎯 DevOps • DevSecOps"]
+    end
+
+    %% ==== CONTINUOUS DEPLOYMENT ====
+    subgraph CD["🚢 CONTINUOUS DEPLOYMENT"]
+        direction TB
+        subgraph GITOPS["🔄 GitOps Delivery"]
+            E1["🔄 ArgoCD<br/>📍 Kubernetes GitOps<br/>🎯 Platform • DevOps"]
+            E2["🌊 Flux<br/>📍 Cloud-Native GitOps<br/>🎯 Platform • Cloud"]
+        end
+        
+        subgraph DEPLOY["🎯 Deployment Tools"]
+            E3["🎯 Spinnaker<br/>📍 Multi-Cloud Deployment<br/>🎯 Platform • Cloud"]
+            E4["🚀 Tekton<br/>📍 Cloud-Native Pipelines<br/>🎯 Platform"]
+        end
+
+        subgraph RUNTIME_SEC["🛡️ Runtime Security"]
+            E5["🦅 Falco<br/>📍 Runtime Threat Detection<br/>🎯 DevSecOps • SRE"]
+            E6["🌊 Aqua Security<br/>📍 Container Protection<br/>🎯 DevSecOps"]
+        end
+    end
+
+    %% ==== PLATFORM & ORCHESTRATION ====
+    subgraph PLATFORM["⚙️ PLATFORM & ORCHESTRATION"]
+        direction TB
+        subgraph ORCHESTRATION["☸️ Container Orchestration"]
+            P1["☸️ Kubernetes<br/>📍 Container Orchestration<br/>🎯 Platform • DevOps • SRE"]
+            P2["🔴 OpenShift<br/>📍 Enterprise Kubernetes<br/>🎯 Platform • DevOps"]
+            P3["🐳 Docker Swarm<br/>📍 Simple Orchestration<br/>🎯 DevOps"]
+        end
+        
+        subgraph SERVICE_MESH["🕸️ Service Mesh & APIs"]
+            P4["🕸️ Istio • Linkerd<br/>📍 Service Mesh<br/>🎯 Platform • SRE"]
+            P5["🔌 Kong • Apigee<br/>📍 API Gateway<br/>🎯 Platform • DevOps"]
+            P6["🌐 Envoy Proxy<br/>📍 Load Balancing<br/>🎯 Platform • SRE"]
+        end
+        
+        subgraph DEV_PORTAL["🏗️ Developer Experience"]
+            P7["🏗️ Backstage<br/>📍 Developer Portal<br/>🎯 Platform"]
+            P8["📦 Helm • Kustomize<br/>📍 K8s Package Management<br/>🎯 Platform • DevOps"]
+        end
+    end
+
+    %% ==== OBSERVABILITY & SRE ====
+    subgraph OBSERVABILITY["📊 OBSERVABILITY & SRE"]
+        direction TB
+        subgraph MONITORING["📈 Metrics & Monitoring"]
+            O1["📈 Prometheus<br/>📍 Metrics Collection<br/>🎯 SRE • Platform"]
+            O2["📊 Grafana • Kibana<br/>📍 Visualization<br/>🎯 SRE • DevOps"]
+            O3["📱 DataDog • New Relic<br/>📍 APM & Infrastructure<br/>🎯 SRE"]
+        end
+        
+        subgraph LOGGING["📝 Logging & Tracing"]
+            O4["📝 ELK Stack • Fluentd<br/>📍 Log Aggregation<br/>🎯 SRE • DevOps"]
+            O5["🔍 Jaeger • Zipkin<br/>📍 Distributed Tracing<br/>🎯 SRE • DevOps"]
+            O6["📊 Loki<br/>📍 Log Aggregation<br/>🎯 SRE"]
+            O7["🔭 OpenTelemetry<br/>📍 Observability Framework<br/>🎯 SRE • Platform"]
+        end
+        
+        subgraph RELIABILITY["🚨 Reliability & Incidents"]
+            O8["🚨 PagerDuty • Opsgenie<br/>📍 Incident Management<br/>🎯 SRE • DevOps"]
+            O9["💥 Gremlin • Chaos Monkey<br/>📍 Chaos Engineering<br/>🎯 SRE"]
+            O10["📋 Runbooks • Playbooks<br/>📍 Incident Response<br/>🎯 SRE • DevOps"]
+        end
+    end
+
+    %% ==== CLOUD & INFRASTRUCTURE ====
+    subgraph CLOUD["☁️ CLOUD & INFRASTRUCTURE"]
+        direction TB
+        subgraph PROVIDERS["🌐 Cloud Providers"]
+            CL1["☁️ AWS<br/>📍 Amazon Web Services<br/>🎯 Cloud • DevOps • SRE"]
+            CL2["🔵 Azure<br/>📍 Microsoft Cloud<br/>🎯 Cloud • Platform"]
+            CL3["🌈 Google Cloud<br/>📍 GCP Services<br/>🎯 Cloud • Platform"]
+            CL4["🔥 Multi-Cloud<br/>📍 Hybrid Strategies<br/>🎯 Cloud • Platform"]
+        end
+        
+        subgraph IAC["🏗️ Infrastructure as Code"]
+            CL5["🏗️ Terraform<br/>📍 Infrastructure Provisioning<br/>🎯 Cloud • DevOps • Platform"]
+            CL6["🚀 Pulumi<br/>📍 Modern Infrastructure<br/>🎯 Cloud • Platform"]
+            CL7["☁️ CloudFormation<br/>📍 AWS Native IaC<br/>🎯 Cloud • DevOps"]
+        end
+        
+        subgraph CONFIG_MGMT["⚙️ Configuration & Secrets"]
+            CL8["⚙️ Ansible • Puppet • Chef<br/>📍 Configuration Management<br/>🎯 Cloud • DevOps"]
+            CL9["🔑 HashiCorp Vault<br/>📍 Secrets Management<br/>🎯 DevSecOps • Cloud"]
+            CL10["🗂️ Consul<br/>📍 Service Discovery<br/>🎯 Platform • SRE"]
+        end
+    end
+
+    %% ==== ROLE-BASED WORKFLOWS ====
+    %% Planning flows to CI
+    A1 --> B1 & B2 & B3 & B4
+    A2 --> B1 & B2 & B3
+    A3 --> P7
+    A4 --> B1 & B2 & B3
+
+    %% CI flows to Build
+    B1 --> B5 & B6 & B7 & B8
+    B2 --> B5 & B6 & B7 & B8
+    B3 --> B5 & B6 & B7 & B8
+    B4 --> B5 & B6 & B7 & B8
+
+    %% Build flows to Security
+    B5 -.-> C1 & C2 & C3
+    B6 -.-> C1 & C2 & C3
+    B7 -.-> C1 & C2
+    B8 -.-> C1 & C2
+
+    %% IaC Security
+    CL5 -.-> C4 & C5
+    CL6 -.-> C4 & C5
+    CL7 -.-> C4
+
+    %% Security to Artifacts
+    C1 --> D1 & D2 & D3 & D4
+    C2 --> D1 & D2 & D3 & D4
+    C3 --> D1 & D2 & D3
+
+    %% Artifacts to Deployment
+    D1 --> E1 & E2 & E3
+    D2 --> E1 & E2 & E3
+    D3 --> E1 & E2 & E3 & E4
+    D4 --> E1 & E2 & E3
+
+    %% Deployment to Platform
+    E1 --> P1 & P2
+    E2 --> P1 & P2
+    E3 --> P1 & P2 & P4
+    E4 --> P1
+
+    %% Runtime Security
+    P1 --> E5 & E6
+    P2 --> E5
+    E6 -.-> C6 & C7
+
+    %% Platform to Observability
+    P1 --> O1 & O4 & O5 & O7
+    P2 --> O5 & O7
+    P4 --> O5 & O7
+    P5 --> O1 & O4
+    P6 --> O1 & O5
+
+    %% Observability flows
+    O1 --> O2 & O8
+    O4 --> O2 & O8
+    O5 --> O2
+    O7 --> O1 & O4 & O5
+    O8 --> A2
+    O9 --> P1 & P2
+
+    %% Cloud Infrastructure flows
+    CL5 --> CL1 & CL2 & CL3 & CL4
+    CL6 --> CL1 & CL2 & CL3
+    CL7 --> CL1
+    CL8 --> CL1 & CL2 & CL3
+    CL9 --> P1 & B1 & B2 & B3
+    CL10 --> P1 & P4 & P5
+
+    %% Platform runs on Cloud
+    P1 -.-> CL1 & CL2 & CL3
+    P2 -.-> CL1 & CL2 & CL3
+
+    %% Developer Portal Integration
+    P7 -.-> A1 & B1 & B2 & O2 & P8
+
+    %% ==== ENHANCED STYLING ====
     
-    %% Enhanced Flow Connections
-    A1 -.-> B1
-    A1 -.-> B2  
-    A1 -.-> B3
-    
-    B1 --> B4
-    B2 --> B4
-    B3 --> B4
-    
-    B4 ==> C1
-    B4 ==> C2
-    C1 --> C3
-    C2 --> C3
-    
-    C3 ==> D1
-    C4 --> P1
-    
-    D1 ==> P1
-    D2 --> P1
-    D3 --> P1
-    
-    P1 ==> E1
-    P1 --> E3
-    P2 --> E4
-    
-    E1 --> E2
-    E1 --> E5
-    E3 --> E5
-    E4 --> E2
-    
-    CL2 ==> CL1
-    CL3 --> CL1
-    P1 -.-> CL1
-    
-    %% Modern Styling with Better Color Scheme
-    %% Development Phase - Purple Theme
-    style A1 fill:#8B5FBF,stroke:#6A4C8C,stroke-width:3px,color:#fff
-    style A2 fill:#9A6FB0,stroke:#7A5690,stroke-width:3px,color:#fff
-    style A3 fill:#AB7FA1,stroke:#8B6581,stroke-width:3px,color:#fff
-    
-    %% CI Phase - Blue Theme
-    style B1 fill:#4A90E2,stroke:#3570B2,stroke-width:3px,color:#fff
-    style B2 fill:#5BA0F2,stroke:#3B80D2,stroke-width:3px,color:#fff
-    style B3 fill:#6CB0FF,stroke:#4C90DF,stroke-width:3px,color:#fff
-    style B4 fill:#7DC0FF,stroke:#5DA0EF,stroke-width:4px,color:#fff
-    
-    %% Security Phase - Red/Orange Theme
-    style C1 fill:#E74C3C,stroke:#C73E1D,stroke-width:3px,color:#fff
-    style C2 fill:#F39C12,stroke:#E67E22,stroke-width:3px,color:#fff
-    style C3 fill:#E67E22,stroke:#D68910,stroke-width:3px,color:#fff
-    style C4 fill:#F1948A,stroke:#EC7063,stroke-width:3px,color:#fff
-    
-    %% CD Phase - Green Theme
-    style D1 fill:#27AE60,stroke:#239B56,stroke-width:3px,color:#fff
-    style D2 fill:#58D68D,stroke:#52C370,stroke-width:3px,color:#fff
-    style D3 fill:#82E0AA,stroke:#6DD084,stroke-width:3px,color:#fff
-    
-    %% Platform Phase - Yellow/Gold Theme
-    style P1 fill:#F39C12,stroke:#E67E22,stroke-width:4px,color:#fff
-    style P2 fill:#F4D03F,stroke:#F1C40F,stroke-width:3px,color:#fff
-    style P3 fill:#F7DC6F,stroke:#F4D03F,stroke-width:3px,color:#fff
-    
-    %% Monitoring Phase - Teal Theme
-    style E1 fill:#17A2B8,stroke:#138496,stroke-width:3px,color:#fff
-    style E2 fill:#20C997,stroke:#1ABC9C,stroke-width:3px,color:#fff
-    style E3 fill:#48CAE4,stroke:#0077B6,stroke-width:3px,color:#fff
-    style E4 fill:#90E0EF,stroke:#00B4D8,stroke-width:3px,color:#fff
-    style E5 fill:#CAF0F8,stroke:#0096C7,stroke-width:3px,color:#000
-    
-    %% Cloud Phase - Gradient Blue Theme
-    style CL1 fill:#667EEA,stroke:#764BA2,stroke-width:4px,color:#fff
-    style CL2 fill:#764BA2,stroke:#667EEA,stroke-width:3px,color:#fff
-    style CL3 fill:#9575DE,stroke:#667EEA,stroke-width:3px,color:#fff
-    
-    %% Section Styling
-    style dev fill:#F8F9FA,stroke:#6C757D,stroke-width:2px,stroke-dasharray: 5 5
-    style ci fill:#E3F2FD,stroke:#1976D2,stroke-width:2px,stroke-dasharray: 5 5
-    style security fill:#FFEBEE,stroke:#D32F2F,stroke-width:2px,stroke-dasharray: 5 5
-    style cd fill:#E8F5E8,stroke:#388E3C,stroke-width:2px,stroke-dasharray: 5 5
-    style platform fill:#FFF8E1,stroke:#F57C00,stroke-width:2px,stroke-dasharray: 5 5
-    style monitoring fill:#E0F2F1,stroke:#00796B,stroke-width:2px,stroke-dasharray: 5 5
-    style cloud fill:#E8EAF6,stroke:#3F51B5,stroke-width:2px,stroke-dasharray: 5 5
+    %% Planning & Design - Purple Neo
+    classDef planStyle fill:#667eea,stroke:#5a67d8,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
+    class A1,A2,A3,A4 planStyle
+
+    %% CI - Blue Neo
+    classDef ciStyle fill:#4facfe,stroke:#3182ce,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
+    class B1,B2,B3,B4,B5,B6,B7,B8 ciStyle
+
+    %% Security - Red/Orange Neo
+    classDef securityStyle fill:#fa709a,stroke:#e53e3e,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
+    class C1,C2,C3,C4,C5,C6,C7 securityStyle
+
+    %% Artifacts - Purple/Pink Neo
+    classDef artifactStyle fill:#a8edea,stroke:#805ad5,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:12px
+    class D1,D2,D3,D4 artifactStyle
+
+    %% CD & Runtime - Green Neo
+    classDef cdStyle fill:#84fab0,stroke:#38a169,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:12px
+    class E1,E2,E3,E4,E5,E6 cdStyle
+
+    %% Platform - Orange/Yellow Neo
+    classDef platformStyle fill:#ffeaa7,stroke:#dd6b20,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:12px
+    class P1,P2,P3,P4,P5,P6,P7,P8 platformStyle
+
+    %% Observability - Teal/Cyan Neo
+    classDef observabilityStyle fill:#81ecec,stroke:#319795,stroke-width:3px,color:#2d3748,font-weight:bold,font-size:12px
+    class O1,O2,O3,O4,O5,O6,O7,O8,O9,O10 observabilityStyle
+
+    %% Cloud - Blue/Purple Neo
+    classDef cloudStyle fill:#74b9ff,stroke:#3182ce,stroke-width:3px,color:#ffffff,font-weight:bold,font-size:12px
+    class CL1,CL2,CL3,CL4,CL5,CL6,CL7,CL8,CL9,CL10 cloudStyle
 ```
+
+## 🚀 DevOps Toolchain Overview
+
+The diagram above showcases the comprehensive ecosystem of tools and workflows used by modern engineering teams. Here's how different roles interact with this toolchain:
+
+### 👥 **Role-Based Workflows**
+
+#### 🔧 **DevOps Engineers**
+- **Primary Focus**: CI/CD pipelines, infrastructure automation, and deployment orchestration
+- **Key Tools**: Jenkins, GitHub Actions, Terraform, Kubernetes, Prometheus
+- **Daily Tasks**: Managing build pipelines, automating deployments, monitoring infrastructure health
+
+#### 🛡️ **DevSecOps Engineers** 
+- **Primary Focus**: Security integration throughout the development lifecycle
+- **Key Tools**: Snyk, SonarQube, Falco, OWASP ZAP, HashiCorp Vault
+- **Daily Tasks**: Vulnerability scanning, security policy enforcement, compliance monitoring
+
+#### ☁️ **Cloud Engineers**
+- **Primary Focus**: Cloud infrastructure design, multi-cloud strategies, and cost optimization
+- **Key Tools**: AWS/Azure/GCP, Terraform, Pulumi, CloudFormation
+- **Daily Tasks**: Infrastructure provisioning, cloud architecture design, resource optimization
+
+#### 📊 **Site Reliability Engineers (SRE)**
+- **Primary Focus**: System reliability, performance monitoring, and incident management
+- **Key Tools**: Prometheus, Grafana, ELK Stack, PagerDuty, Chaos Engineering tools
+- **Daily Tasks**: Monitoring system health, incident response, capacity planning
+
+#### ⚙️ **Platform Engineers**
+- **Primary Focus**: Developer experience, internal platforms, and tooling
+- **Key Tools**: Kubernetes, Backstage, Helm, Istio, API Gateways
+- **Daily Tasks**: Building internal platforms, improving developer productivity, service mesh management
+
+### 🔄 **Workflow Integration**
+
+The diagram illustrates how these roles collaborate through:
+- **Shared Planning**: All roles contribute to project planning and design
+- **Integrated Security**: DevSecOps practices embedded throughout the pipeline
+- **Continuous Feedback**: Monitoring and observability feeding back into planning
+- **Infrastructure as Code**: Cloud and Platform engineers defining infrastructure through code
+- **Collaborative Incident Response**: SRE and DevOps working together on reliability
+
+### 🎯 **Key Principles**
+
+- **Shift Left**: Security and testing integrated early in the development process
+- **GitOps**: Declarative infrastructure and application management through Git
+- **Observability**: Comprehensive monitoring, logging, and tracing across all systems
+- **Automation**: Reducing manual processes through intelligent automation
+- **Collaboration**: Breaking down silos between development, operations, and security teams
 
 ## 🤝 Let's Connect & Collaborate!
 
